@@ -1,5 +1,5 @@
 FROM openjdk:8
-ARG WAR_FILE=target/ws-0.0.1-SNAPSHOT.war
-COPY ${WAR_FILE} nba.war
+ARG WAR_FILE=target/*.war
+COPY ${WAR_FILE} nba.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/nba.war"]
+ENTRYPOINT ["java", "-jar", "/nba.jar"]
