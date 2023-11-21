@@ -1,4 +1,4 @@
-FROM openjdk:7
+FROM amazoncorretto:8
 ARG WAR_FILE=target/*.war
 COPY ${WAR_FILE} nba.jar
 EXPOSE 8080
