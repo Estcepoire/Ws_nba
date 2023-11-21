@@ -7,6 +7,6 @@ public class LoginController{
     @GetMapping("/login")
     @ResponseBody
     public String login() {
-        return "FFFF";
+        return "AAAA";
     }
 }
